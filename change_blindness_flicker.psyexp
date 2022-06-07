@@ -1,0 +1,387 @@
+﻿<?xml version="1.0" ?>
+<PsychoPy2experiment encoding="utf-8" version="2022.1.2">
+  <Settings>
+    <Param val="use prefs" valType="str" updates="None" name="Audio latency priority"/>
+    <Param val="use prefs" valType="str" updates="None" name="Audio lib"/>
+    <Param val="" valType="str" updates="None" name="Completed URL"/>
+    <Param val="auto" valType="str" updates="None" name="Data file delimiter"/>
+    <Param val="u'data/%s_%s_%s' % (expInfo['participant'], expName, expInfo['date'])" valType="code" updates="None" name="Data filename"/>
+    <Param val="True" valType="bool" updates="None" name="Enable Escape"/>
+    <Param val="{'participant': ''}" valType="code" updates="None" name="Experiment info"/>
+    <Param val="True" valType="bool" updates="None" name="Force stereo"/>
+    <Param val="True" valType="bool" updates="None" name="Full-screen window"/>
+    <Param val="" valType="str" updates="None" name="HTML path"/>
+    <Param val="" valType="str" updates="None" name="Incomplete URL"/>
+    <Param val="testMonitor" valType="str" updates="None" name="Monitor"/>
+    <Param val="[]" valType="fileList" updates="None" name="Resources"/>
+    <Param val="False" valType="bool" updates="None" name="Save csv file"/>
+    <Param val="False" valType="bool" updates="None" name="Save excel file"/>
+    <Param val="False" valType="bool" updates="None" name="Save hdf5 file"/>
+    <Param val="True" valType="bool" updates="None" name="Save log file"/>
+    <Param val="True" valType="bool" updates="None" name="Save psydat file"/>
+    <Param val="True" valType="bool" updates="None" name="Save wide csv file"/>
+    <Param val="1" valType="num" updates="None" name="Screen"/>
+    <Param val="True" valType="bool" updates="None" name="Show info dlg"/>
+    <Param val="False" valType="bool" updates="None" name="Show mouse"/>
+    <Param val="pix" valType="str" updates="None" name="Units"/>
+    <Param val="" valType="str" updates="None" name="Use version"/>
+    <Param val="[1280, 800]" valType="code" updates="None" name="Window size (pixels)"/>
+    <Param val="avg" valType="str" updates="None" name="blendMode"/>
+    <Param val="$[-1,-1,-1]" valType="str" updates="None" name="color"/>
+    <Param val="rgb" valType="str" updates="None" name="colorSpace"/>
+    <Param val="100.1.1.1" valType="str" updates="None" name="elAddress"/>
+    <Param val="FILTER_LEVEL_2" valType="str" updates="None" name="elDataFiltering"/>
+    <Param val="FILTER_LEVEL_OFF" valType="str" updates="None" name="elLiveFiltering"/>
+    <Param val="EYELINK 1000 DESKTOP" valType="str" updates="None" name="elModel"/>
+    <Param val="ELLIPSE_FIT" valType="str" updates="None" name="elPupilAlgorithm"/>
+    <Param val="PUPIL_AREA" valType="str" updates="None" name="elPupilMeasure"/>
+    <Param val="1000" valType="num" updates="None" name="elSampleRate"/>
+    <Param val="False" valType="bool" updates="None" name="elSimMode"/>
+    <Param val="RIGHT_EYE" valType="str" updates="None" name="elTrackEyes"/>
+    <Param val="PUPIL_CR_TRACKING" valType="str" updates="None" name="elTrackingMode"/>
+    <Param val="change_blindness_flicker" valType="str" updates="None" name="expName"/>
+    <Param val="on Sync" valType="str" updates="None" name="exportHTML"/>
+    <Param val="None" valType="str" updates="None" name="eyetracker"/>
+    <Param val="127.0.0.1" valType="str" updates="None" name="gpAddress"/>
+    <Param val="4242" valType="num" updates="None" name="gpPort"/>
+    <Param val="PsychToolbox" valType="str" updates="None" name="keyboardBackend"/>
+    <Param val="debug" valType="code" updates="None" name="logging level"/>
+    <Param val="('MIDDLE_BUTTON',)" valType="list" updates="None" name="mgBlink"/>
+    <Param val="CONTINUOUS" valType="str" updates="None" name="mgMove"/>
+    <Param val="0.5" valType="num" updates="None" name="mgSaccade"/>
+    <Param val="0.6" valType="num" updates="None" name="plConfidenceThreshold"/>
+    <Param val="True" valType="bool" updates="None" name="plPupilCaptureRecordingEnabled"/>
+    <Param val="" valType="str" updates="None" name="plPupilCaptureRecordingLocation"/>
+    <Param val="127.0.0.1" valType="str" updates="None" name="plPupilRemoteAddress"/>
+    <Param val="50020" valType="num" updates="None" name="plPupilRemotePort"/>
+    <Param val="1000" valType="num" updates="None" name="plPupilRemoteTimeoutMs"/>
+    <Param val="False" valType="bool" updates="None" name="plPupillometryOnly"/>
+    <Param val="psychopy_iohub_surface" valType="str" updates="None" name="plSurfaceName"/>
+    <Param val="" valType="str" updates="None" name="tbLicenseFile"/>
+    <Param val="" valType="str" updates="None" name="tbModel"/>
+    <Param val="60" valType="num" updates="None" name="tbSampleRate"/>
+    <Param val="" valType="str" updates="None" name="tbSerialNo"/>
+  </Settings>
+  <Routines>
+    <Routine name="trial">
+      <CodeComponent name="code_trial">
+        <Param val="" valType="extendedCode" updates="constant" name="Before Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
+        <Param val="# form image components for drawing stimuli&amp;#10;img_absent = visual.ImageStim(&amp;#10;    win=win,&amp;#10;    name='img_absent', units='pix', &amp;#10;    image='sin', mask=None,&amp;#10;    ori=0, pos=(0, 0), size=(1024, 768),&amp;#10;    color=[1,1,1], colorSpace='rgb', opacity=1,&amp;#10;    flipHoriz=False, flipVert=False,&amp;#10;    texRes=512, interpolate=True, depth=0.0)&amp;#10;img_present = visual.ImageStim(&amp;#10;    win=win,&amp;#10;    name='img_present', units='pix', &amp;#10;    image='sin', mask=None,&amp;#10;    ori=0, pos=(0, 0), size=(1024, 768),&amp;#10;    color=[1,1,1], colorSpace='rgb', opacity=1,&amp;#10;    flipHoriz=False, flipVert=False,&amp;#10;    texRes=512, interpolate=True, depth=-1.0)" valType="extendedCode" updates="constant" name="Begin Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="img_present.setImage(os.path.join('img_stimuli', target_present))&amp;#10;img_absent.setImage(os.path.join('img_stimuli', target_absent))&amp;#10;&amp;#10;&amp;#10;# store trial start time for saving during &quot;End Routine&quot;&amp;#10;trial_start_time = globalClock.getTime()" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="Py" valType="str" updates="None" name="Code Type"/>
+        <Param val="# show image with target present for 240ms, &amp;#10;# nothing for 80ms, then the image with the&amp;#10;# target absent for 240ms, then nothing for the &amp;#10;# remaining 80ms of the cycle&amp;#10;# (so in total, each cycle is 640ms)&amp;#10;&amp;#10;if tThisFlip%0.64&lt;0.24:&amp;#10;    img_present.draw()&amp;#10;elif 0.32 &lt;= (tThisFlip%0.64)&lt;0.56:&amp;#10;    img_absent.draw()" valType="extendedCode" updates="constant" name="Each Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Routine"/>
+        <Param val="# save trial end time&amp;#10;trial_end_time = globalClock.getTime()&amp;#10;&amp;#10;# if the participant did make a mouse click during the trial's 30s&amp;#10;if len(mouse_trial.x): &amp;#10;    # if participant's click is within two times the target radius, &amp;#10;    # determined using Pythagora's, register the click as being correct.&amp;#10;    # (the radius is based on the pixel area specified in the excel sheet from the change blindness database.&amp;#10;    # the reason that we multiply the radius by 2 here is that for&amp;#10;    # elongated objects, the radius ends up being way too short,&amp;#10;    # and the risk of false negatives is probably much greater than&amp;#10;    # false positives)&amp;#10;    if (((target_xcoord_px - mouse_trial.x)**2 + (target_ycoord_px - mouse_trial.y)**2)**(1/2)) &lt; target_radius_px*2:&amp;#10;        img_trial_loop.addData('mouse_trial.correct', 1)&amp;#10;    # if participant's click is more than 2 target radii away from&amp;#10;    # the target center, register it as incorrect.&amp;#10;    else:&amp;#10;        img_trial_loop.addData('mouse_trial.correct', 0)&amp;#10;else:&amp;#10;    img_trial_loop.addData('mouse_trial.correct', &quot;no_response&quot;)&amp;#10;&amp;#10;# save trial start time, using saved value from &quot;Begin Routine&quot;,&amp;#10;# and trial end time&amp;#10;img_trial_loop.addData('trial_start_time', trial_start_time)&amp;#10;img_trial_loop.addData('trial_end_time', trial_end_time)&amp;#10;" valType="extendedCode" updates="constant" name="End Routine"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="code_trial" valType="code" updates="None" name="name"/>
+      </CodeComponent>
+      <MouseComponent name="mouse_trial">
+        <Param val="" valType="list" updates="constant" name="clickable"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="any click" valType="str" updates="constant" name="forceEndRoutineOnPress"/>
+        <Param val="mouse_trial" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="constant" name="newClicksOnly"/>
+        <Param val="on click" valType="str" updates="None" name="saveMouseState"/>
+        <Param val="name," valType="list" updates="constant" name="saveParamsClickable"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="30" valType="code" updates="constant" name="stopVal"/>
+        <Param val="False" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="mouse onset" valType="str" updates="constant" name="timeRelativeTo"/>
+      </MouseComponent>
+    </Routine>
+    <Routine name="instructions">
+      <TextComponent name="text_welcome">
+        <Param val="white" valType="str" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="" valType="str" updates="constant" name="flip"/>
+        <Param val="Arial" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.7" valType="code" updates="constant" name="letterHeight"/>
+        <Param val="text_welcome" valType="code" updates="None" name="name"/>
+        <Param val="1" valType="code" updates="constant" name="opacity"/>
+        <Param val="0" valType="code" updates="constant" name="ori"/>
+        <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="False" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="Du kommer att visas bildspel.&amp;#10;&amp;#10;Varje bildspel växlar mellan två bilder. I den ena bilden har ett föremål tagits bort så att det saknas. &amp;#10;&amp;#10;Du ska leta efter objektet som hela tiden försvinner och dyker upp igen i bildspelet. Så snart du hittar det, klicka med vänster musknapp på den plats objektet befinner sig.&amp;#10;&amp;#10;Testet tar cirka 10-15 minuter. Du kommer att se ett meddelande när du är klar.&amp;#10;&amp;#10;Klicka på texten nedanför för att pröva ett exempel." valType="str" updates="constant" name="text"/>
+        <Param val="deg" valType="str" updates="None" name="units"/>
+        <Param val="26" valType="code" updates="constant" name="wrapWidth"/>
+      </TextComponent>
+      <TextComponent name="text_welcome_continue">
+        <Param val="white" valType="str" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="" valType="str" updates="constant" name="flip"/>
+        <Param val="Arial" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.5" valType="code" updates="constant" name="letterHeight"/>
+        <Param val="text_welcome_continue" valType="code" updates="None" name="name"/>
+        <Param val="1" valType="code" updates="constant" name="opacity"/>
+        <Param val="0" valType="code" updates="constant" name="ori"/>
+        <Param val="(0, -7)" valType="list" updates="constant" name="pos"/>
+        <Param val="False" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="Klicka här när du läst klart för att pröva ett exempel" valType="extendedStr" updates="constant" name="text"/>
+        <Param val="deg" valType="str" updates="None" name="units"/>
+        <Param val="" valType="code" updates="constant" name="wrapWidth"/>
+      </TextComponent>
+      <MouseComponent name="mouse_welcome">
+        <Param val="text_welcome_continue" valType="list" updates="constant" name="clickable"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="valid click" valType="str" updates="constant" name="forceEndRoutineOnPress"/>
+        <Param val="mouse_welcome" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="constant" name="newClicksOnly"/>
+        <Param val="never" valType="str" updates="None" name="saveMouseState"/>
+        <Param val="" valType="list" updates="constant" name="saveParamsClickable"/>
+        <Param val="False" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="2.5" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="False" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="mouse onset" valType="str" updates="constant" name="timeRelativeTo"/>
+      </MouseComponent>
+    </Routine>
+    <Routine name="end_screen">
+      <TextComponent name="text_end">
+        <Param val="white" valType="str" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="" valType="str" updates="constant" name="flip"/>
+        <Param val="Arial" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="1.5" valType="code" updates="constant" name="letterHeight"/>
+        <Param val="text_end" valType="code" updates="None" name="name"/>
+        <Param val="1" valType="code" updates="constant" name="opacity"/>
+        <Param val="0" valType="code" updates="constant" name="ori"/>
+        <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="False" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="10" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="Tack!&amp;#10;&amp;#10;Ta cirka två minuters paus innan du matar in ditt deltagar-ID för nästa test." valType="extendedStr" updates="constant" name="text"/>
+        <Param val="deg" valType="str" updates="None" name="units"/>
+        <Param val="26" valType="code" updates="constant" name="wrapWidth"/>
+      </TextComponent>
+    </Routine>
+    <Routine name="fixation_3000ms">
+      <PolygonComponent name="polygon">
+        <Param val="center" valType="str" updates="constant" name="anchor"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="$[1,1,1]" valType="str" updates="constant" name="fillColor"/>
+        <Param val="rgb" valType="str" updates="constant" name="fillColorSpace"/>
+        <Param val="linear" valType="str" updates="constant" name="interpolate"/>
+        <Param val="$[1,1,1]" valType="str" updates="constant" name="lineColor"/>
+        <Param val="rgb" valType="str" updates="constant" name="lineColorSpace"/>
+        <Param val="1" valType="code" updates="constant" name="lineWidth"/>
+        <Param val="4" valType="int" updates="constant" name="nVertices"/>
+        <Param val="polygon" valType="code" updates="None" name="name"/>
+        <Param val="1" valType="code" updates="constant" name="opacity"/>
+        <Param val="0" valType="code" updates="constant" name="ori"/>
+        <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="False" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="cross" valType="str" updates="constant" name="shape"/>
+        <Param val="(5, 5)" valType="list" updates="constant" name="size"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="3.0" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="deg" valType="str" updates="None" name="units"/>
+        <Param val="" valType="list" updates="constant" name="vertices"/>
+      </PolygonComponent>
+    </Routine>
+    <Routine name="blank_1000ms">
+      <TextComponent name="text_blank_placeholder">
+        <Param val="black" valType="str" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="" valType="str" updates="constant" name="flip"/>
+        <Param val="Arial" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.1" valType="code" updates="constant" name="letterHeight"/>
+        <Param val="text_blank_placeholder" valType="code" updates="None" name="name"/>
+        <Param val="1" valType="code" updates="constant" name="opacity"/>
+        <Param val="0" valType="code" updates="constant" name="ori"/>
+        <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="False" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="1.0" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="" valType="extendedStr" updates="constant" name="text"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="code" updates="constant" name="wrapWidth"/>
+      </TextComponent>
+    </Routine>
+    <Routine name="practice">
+      <CodeComponent name="code_practice">
+        <Param val="" valType="extendedCode" updates="constant" name="Before Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
+        <Param val="# form circle representing target area of practice image&amp;#10;practice_target_radius = 22.140398025397776&amp;#10;practice_target_xcoord = -222.0&amp;#10;practice_target_ycoord = 171.0&amp;#10;practice_target_coords = (&amp;#10;    practice_target_xcoord,&amp;#10;    practice_target_ycoord&amp;#10;)&amp;#10;circle_practice = visual.Polygon(&amp;#10;    win=win, name='circle_practice',&amp;#10;    edges=120, size=(practice_target_radius*2, practice_target_radius*2),&amp;#10;    ori=0, pos=practice_target_coords,&amp;#10;    lineWidth=1, lineColor=[1,-1,-1], lineColorSpace='rgb',&amp;#10;    fillColor=None, fillColorSpace='rgb',&amp;#10;    opacity=1, depth=-2.0, interpolate=True)&amp;#10;&amp;#10;# feedback text stimulus for practice&amp;#10;text_feedback = visual.TextStim(win=win, name='text_feedback',&amp;#10;    text='',&amp;#10;    font='Arial',&amp;#10;    units='deg', pos=(0, 12), height=0.8, wrapWidth=20, ori=0, &amp;#10;    color='white', colorSpace='rgb', opacity=1, &amp;#10;    languageStyle='LTR',&amp;#10;    depth=-1.0);&amp;#10;&amp;#10;# 'continue' text stimulus for practice&amp;#10;text_continue = visual.TextStim(win=win, name='text_continue',&amp;#10;    text='Klicka här för att fortsätta.',&amp;#10;    font='Arial',&amp;#10;    units='deg', pos=(0, -12), height=0.5, wrapWidth=20, ori=0, &amp;#10;    color='white', colorSpace='rgb', opacity=1, &amp;#10;    languageStyle='LTR',&amp;#10;    depth=-1.0);" valType="extendedCode" updates="constant" name="Begin Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="img_present.setImage(os.path.join('img_stimuli', '019_L_filler_present_lamp_sized.jpg'))&amp;#10;img_absent.setImage(os.path.join('img_stimuli', '019_L_filler_absent_lamp_sized.jpg'))&amp;#10;&amp;#10;# initialize list of previous frame's clicked buttons&amp;#10;prevButtonState = []&amp;#10;&amp;#10;# initialize indicator of whether participant has tried&amp;#10;# to click target or not&amp;#10;has_clicked = False" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="Py" valType="str" updates="None" name="Code Type"/>
+        <Param val="buttons = mouse_practice.getPressed()&amp;#10;if buttons != prevButtonState and t&gt;0.2:  # button state changed and more than 0.2s have passed since onset?&amp;#10;    prevButtonState = buttons&amp;#10;    if buttons[0] == 1:  # state changed to a new left button click&amp;#10;        if has_clicked:&amp;#10;            # check if mouse was 'inside' continue text&amp;#10;            if text_continue.contains(mouse_practice):&amp;#10;                continueRoutine = False&amp;#10;        else:&amp;#10;            # check if mouse was inside target circle&amp;#10;            correct_click = False&amp;#10;            if circle_practice.contains(mouse_practice):&amp;#10;                    correct_click = True&amp;#10;            if correct_click:&amp;#10;                text_feedback.text = 'Det var rätt! Föremålet är markerat nedan i rött.'&amp;#10;            else:&amp;#10;                text_feedback.text = 'Du missade föremålet. Det är markerat nedan i rött.'&amp;#10;            x, y = mouse_practice.getPos()&amp;#10;            mouse_practice.x = x&amp;#10;            mouse_practice.y = y&amp;#10;            has_clicked = True&amp;#10;&amp;#10;if not has_clicked:&amp;#10;    # show image with target present for 240ms, &amp;#10;    # nothing for 80ms, then the image with the&amp;#10;    # target absent for 240ms, then nothing for the &amp;#10;    # remaining 80ms of the cycle&amp;#10;    # (so in total, each cycle is 640ms)&amp;#10;    if tThisFlip%0.64&lt;0.24:&amp;#10;        img_present.draw()&amp;#10;    elif 0.32 &lt;= (tThisFlip%0.64)&lt;0.56:&amp;#10;        img_absent.draw()&amp;#10;else:&amp;#10;    img_present.draw()&amp;#10;    circle_practice.draw()&amp;#10;    text_feedback.draw()&amp;#10;    text_continue.draw()" valType="extendedCode" updates="constant" name="Each Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Routine"/>
+        <Param val="# store data about where participant clicked on target area&amp;#10;thisExp.addData('mouse_practice.x', mouse_practice.x)&amp;#10;thisExp.addData('mouse_practice.y', mouse_practice.y)&amp;#10;thisExp.addData('mouse_practice.correct', correct_click)" valType="extendedCode" updates="constant" name="End Routine"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="code_practice" valType="code" updates="None" name="name"/>
+      </CodeComponent>
+      <MouseComponent name="mouse_practice">
+        <Param val="circle_practice" valType="list" updates="constant" name="clickable"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="never" valType="str" updates="constant" name="forceEndRoutineOnPress"/>
+        <Param val="mouse_practice" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="constant" name="newClicksOnly"/>
+        <Param val="never" valType="str" updates="None" name="saveMouseState"/>
+        <Param val="name," valType="list" updates="constant" name="saveParamsClickable"/>
+        <Param val="False" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="False" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="mouse onset" valType="str" updates="constant" name="timeRelativeTo"/>
+      </MouseComponent>
+    </Routine>
+    <Routine name="start">
+      <TextComponent name="text_start_inst">
+        <Param val="white" valType="str" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="" valType="str" updates="constant" name="flip"/>
+        <Param val="Arial" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.7" valType="code" updates="constant" name="letterHeight"/>
+        <Param val="text_start_inst" valType="code" updates="None" name="name"/>
+        <Param val="1" valType="code" updates="constant" name="opacity"/>
+        <Param val="0" valType="code" updates="constant" name="ori"/>
+        <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="False" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="Testet fortsätter till nästa bildspel om du inte svarar inom 30 sekunder.&amp;#10;&amp;#10;Testet tar cirka 10-15 minuter. Du kommer att se ett meddelande när du är klar.&amp;#10;&amp;#10;Klicka på texten nedanför för att börja." valType="str" updates="constant" name="text"/>
+        <Param val="deg" valType="str" updates="None" name="units"/>
+        <Param val="26" valType="code" updates="constant" name="wrapWidth"/>
+      </TextComponent>
+      <TextComponent name="text_start_continue">
+        <Param val="white" valType="str" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="" valType="str" updates="constant" name="flip"/>
+        <Param val="Arial" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.5" valType="code" updates="constant" name="letterHeight"/>
+        <Param val="text_start_continue" valType="code" updates="None" name="name"/>
+        <Param val="1" valType="code" updates="constant" name="opacity"/>
+        <Param val="0" valType="code" updates="constant" name="ori"/>
+        <Param val="(0, -7)" valType="list" updates="constant" name="pos"/>
+        <Param val="False" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="Klicka här när du läst klart för att starta experimentet" valType="extendedStr" updates="constant" name="text"/>
+        <Param val="deg" valType="str" updates="None" name="units"/>
+        <Param val="" valType="code" updates="constant" name="wrapWidth"/>
+      </TextComponent>
+      <MouseComponent name="mouse_start">
+        <Param val="text_start_continue" valType="list" updates="constant" name="clickable"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="valid click" valType="str" updates="constant" name="forceEndRoutineOnPress"/>
+        <Param val="mouse_start" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="constant" name="newClicksOnly"/>
+        <Param val="never" valType="str" updates="None" name="saveMouseState"/>
+        <Param val="" valType="list" updates="constant" name="saveParamsClickable"/>
+        <Param val="False" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="2.5" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="False" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="mouse onset" valType="str" updates="constant" name="timeRelativeTo"/>
+      </MouseComponent>
+    </Routine>
+  </Routines>
+  <Flow>
+    <Routine name="instructions"/>
+    <Routine name="practice"/>
+    <Routine name="start"/>
+    <LoopInitiator loopType="TrialHandler" name="img_trial_loop">
+      <Param name="Selected rows" updates="None" val="" valType="str"/>
+      <Param name="conditions" updates="None" val="None" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="$os.path.join(&quot;specification_csvs&quot;, &quot;change_blindness_flicker_stimuli_data.csv&quot;)" valType="str"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="loopType" updates="None" val="random" valType="str"/>
+      <Param name="nReps" updates="None" val="1" valType="code"/>
+      <Param name="name" updates="None" val="img_trial_loop" valType="code"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+    </LoopInitiator>
+    <Routine name="fixation_3000ms"/>
+    <Routine name="blank_1000ms"/>
+    <Routine name="trial"/>
+    <LoopTerminator name="img_trial_loop"/>
+    <Routine name="end_screen"/>
+  </Flow>
+</PsychoPy2experiment>

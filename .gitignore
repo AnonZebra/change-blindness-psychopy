@@ -1,0 +1,8 @@
+__pycache__/
+*todo.txt
+data/
+*notes.txt
+.vscode
+.original.old..git
+.DS_Store
+*lastrun.py
